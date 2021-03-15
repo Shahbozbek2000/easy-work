@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; }
+body{
+    font-family: 'Poppins', sans-serif; }
+.form-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('/images/background.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; }
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    background: rgba(35, 19, 0, 0.73);
+    width: 80%;
+    height: 80%; }
+.container h2{
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 54px;
+    color: #FFFFFF; }
+.container .form-input{
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 16px;
+    padding: 11px 55px;
+    text-align: center;
+    color: #07002F;
+    background: #FFFFFF;
+    border-radius: 28px; }
+.form-input::placeholder{
+    color: #07002F; }
+.btn-group{
+    display: flex;
+    
+    justify-content: center; }
+.btn-group button{
+    display: inline-block;
+    border: none;
+    outline: none;
+    padding: 10px 45px;
+    color: #fff;
+    background: linear-gradient(180deg, #FFBC39 0%, #CC8700 100%);
+    transition: .3s linear;
+    border-radius: 30px; }
+.btn-group button:hover{
+    background: transparent !important;
+    color: #CC8700;
+    border: 2px solid #CC8700; }
+.sign-in-link p{
+    padding-top: 30px;
+    text-align: center; }
+.sign-in-link p a{
+    transition: all .5s;
+    text-decoration: none !important;
+    color: #fff !important;
+    cursor: pointer; }
+.sign-in-link p a:hover{
+    font-weight: 400;
+    border-bottom: 2px solid #CC8700;
+    color: #CC8700 !important; }
+
+@media screen and (max-width: 576px) {
+    .container{
+        height: 60%;
+    }
+    .sign-in h2{
+        font-size: 25px;
+    }
+    .container .form-input{
+        padding: 9px 30px;
+        font-size: 14px;
+    }
+    .container .btn-group button{
+        padding: 6px 35px;
+        font-size: 14px;
+    }
+}
